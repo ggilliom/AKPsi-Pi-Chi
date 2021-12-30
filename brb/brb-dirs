@@ -1,0 +1,63 @@
+#!/usr/bin/bash
+
+# Make primary Season-Year directory
+semesterDir=${1} # pass in Season-Year as command line argument
+
+mkdir "${semesterDir}"
+
+#FREEMAN
+freemanDir="${semesterDir}/A.-B.-Freeman-School-of-Business"
+
+mkdir "${freemanDir}"
+
+while read line; do
+    name="${line}"
+    mkdir "${freemanDir}/${name}"
+done < freeman.txt # Requires freeman.txt to be preoperly updated and formatted
+
+#SLA
+slaDir="${semesterDir}/School-of-Liberal-Arts"
+
+mkdir "${slaDir}"
+
+while read line; do
+    name="${line}"
+    mkdir "${slaDir}/${name}"
+done < sla.txt # Requires sla.txt to be preoperly updated and formatted
+
+#SSE
+sseDir="${semesterDir}/School-of-Science-and-Engineering"
+
+mkdir "${sseDir}"
+
+while read line; do
+    name="${line}"
+    mkdir "${sseDir}/${name}"
+done < sse.txt # Requires sse.txt to be preoperly updated and formatted
+
+#SPH
+sphDir="${semesterDir}/School-of-Public-Health"
+
+mkdir "${sphDir}"
+
+#Arch
+archDir="${semesterDir}/School-of-Architecture"
+
+mkdir "${archDir}"
+
+#SoPA
+sopaDir="${semesterDir}/School-of-Professional-Advancement"
+
+mkdir "${sopaDir}"
+
+#Pre-Law/Health (this might not work oops)
+preDir="${semesterDir}/Pre-Law:Health"
+
+mkdir ${preDir}
+
+#Undecided
+unDir="${semesterDir}/Undecided"
+
+mkdir ${unDir}
+
+echo "done!"
