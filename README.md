@@ -2,8 +2,8 @@
 Programming and other CS-based resources used by the Pi Chi Chapter of Alpha Kappa Psi Pre-Professional Business Fraternity
 
 ## brb
-Files for the maintenance of the chapter's BRB.
-* 'Bank-Template' contains an directory outline for the chapter's resume bank
+Files for the maintenance of chapter resources.
+* 'Bank-Template' contains a directory outline for the chapter's resume bank
 * 'brb-dirs' is a bash script that reads in accompanying .txt files 'freeman.txt,' 'sla.txt,' and 'sse.txt' to automate the creation of the 'Bank-Template' directory in case it is ever lost or deleted
 	* Requires 'Season-Year' to be passed as a command line argument, e.g. Fall-2021
 	* See file's comments to view file specifications for the script to run properly
