@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# **properly updated and formatted: current list of departments for each school, one department per line**
+# properly updated and formatted: current list of departments for each school, one department per line
 
 # Make primary Season-Year directory
 semesterDir=${1} # pass in Season-Year as command line argument
@@ -15,7 +15,7 @@ mkdir "${freemanDir}"
 while read line; do
     name="${line}"
     mkdir "${freemanDir}/${name}"
-done < freeman.txt # Requires freeman.txt to be properly updated and formatted
+done < freeman.txt # Requires freeman.txt to be properly updated, formatted, and placed in same directory as 'brb-dirs'
 
 #SLA
 slaDir="${semesterDir}/School-of-Liberal-Arts"
@@ -25,7 +25,7 @@ mkdir "${slaDir}"
 while read line; do
     name="${line}"
     mkdir "${slaDir}/${name}"
-done < sla.txt # Requires sla.txt to be properly updated and formatted
+done < sla.txt # Requires sla.txt to be properly updated, formatted, and placed in same directory as 'brb-dirs'
 
 #SSE
 sseDir="${semesterDir}/School-of-Science-and-Engineering"
@@ -35,8 +35,7 @@ mkdir "${sseDir}"
 while read line; do
     name="${line}"
     mkdir "${sseDir}/${name}"
-done < sse.txt # Requires sse.txt to be properly updated and formatted
-
+done < sse.txt # Requires sse.txt to be properly updated, formatted, and placed in same directory as 'brb-dirs'
 #SPH
 sphDir="${semesterDir}/School-of-Public-Health"
 
