@@ -3,8 +3,7 @@ Programming and other CS-based resources used by the Pi Chi Chapter of Alpha Kap
 
 ## brb
 Files for the maintenance of chapter resources.
-* 'Bank-Template' contains a directory outline for the chapter's resume bank
-* 'brb-dirs' is a bash script that reads in accompanying .txt files 'freeman.txt,' 'sla.txt,' and 'sse.txt' to automate the creation of the 'Bank-Template' directory in case it is ever lost or deleted
+* 'brb-dirs' is a bash script that reads in accompanying .txt files 'freeman.txt,' 'sla.txt,' and 'sse.txt' to automate the creation of a directory outline for the chapter's resume bank
 	* Requires 'Season-Year' to be passed as a command line argument, e.g. Fall-2021
 	* See file's comments to view file specifications for the script to run properly
 	* `$ bash brb-dirs Season-Year` to run
